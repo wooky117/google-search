@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Autocomplete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Google Search with Autocomplete</h1>
+        <div class="input-container">
+            <input id="search-box" type="text" placeholder="Search..." oninput="handleInput()" autocomplete="off">
+            <button onclick="performSearch()">Search</button>
+        </div>
+        <div id="suggestions" class="autocomplete-suggestions"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
